@@ -64,7 +64,6 @@ body {
     width:100%;
 }
 .card .box .img {
-    height:220px;
     margin:0 auto;
     border-radius:50%;
     overflow:hidden;
