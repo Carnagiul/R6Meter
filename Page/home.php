@@ -1,3 +1,6 @@
+<?php
+
+?>
 <section id="player">
 	<div class="card">
 		<div class="box">
