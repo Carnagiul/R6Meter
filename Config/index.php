@@ -1,8 +1,8 @@
 <?php
 	session_start();
-	require_once("Classe/Player.Clas.php");
-	require_once("Classe/Sql.Clas.php");
-	require_once("Classe/User.Clas.php");
+	require_once("Classe/Player.Class.php");
+	require_once("Classe/Sql.Class.php");
+	require_once("Classe/User.Class.php");
 	$bdd["host"] = "";
 	$bdd["name"] = "";
 	$bdd["username"] = "";
