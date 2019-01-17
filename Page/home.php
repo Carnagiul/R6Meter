@@ -1,1 +1,3 @@
-home.php
+<section>
+	PLAYER HERE
+</section>
