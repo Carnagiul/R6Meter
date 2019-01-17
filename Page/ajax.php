@@ -46,7 +46,7 @@ switch ($action) {
 				<div class=\"card\">
 					<div class=\"box\">
 						<div class=\"img\">
-							<img src=\"" . $player->getImg() . "\">
+							<img class=\"img-thumbnail\" src=\"" . $player->getImg() . "\">
 						</div>
 						<h2>" . $player->getName() . "<br><span>" . $player->getTeam() . "</span></h2>
 						<p> some details </p>

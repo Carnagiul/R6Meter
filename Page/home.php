@@ -5,7 +5,7 @@
 	<div class="card">
 		<div class="box">
 			<div class="img">
-				<img class="img-fluid" src="https://www.planwallpaper.com/static/images/cool-wallpaper-5_G6Qe1wU.jpg">
+				<img class="img-thumbnail" src="https://www.planwallpaper.com/static/images/cool-wallpaper-5_G6Qe1wU.jpg">
 			</div>
 			<h2>Pseudo Joueur<br><span>Equipe Actuel</span></h2>
 			<p> some details </p>
