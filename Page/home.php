@@ -9,12 +9,12 @@
 	                tempor incididunt ut labore et.</p>
 	        <span>
 	            <ul>
-	                <li class="text-warning">X</li>
-	                <li class="text-danger">S</li>
-	                <li class="text-success">A</li>
-	                <li class="text-primary">B</li>
-	                <li class="text-info">C</li>
-	                <li class="text-disabled">F</li>
+	                <li class=""><button class="btn btn-danger btn-small btn-rounded rounded">X</button></li>
+	                <li class=""><button class="btn btn-warning btn-small btn-rounded rounded">X</button></li>
+	                <li class=""><button class="btn btn-success btn-small btn-rounded rounded">X</button></li>
+	                <li class=""><button class="btn btn-primary btn-small btn-rounded rounded">X</button></li>
+	                <li class=""><button class="btn btn-info btn-small btn-rounded rounded">X</button></li>
+	                <li class=""><button class="btn btn-disabled btn-small btn-rounded rounded">X</button></li>
 	            </ul>
 	        </span>
 	    </div>
