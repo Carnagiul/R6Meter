@@ -1,23 +1,33 @@
 <section id="player">
 	<div class="card">
-	    <div class="box">
-	        <div class="img">
-	            <img src="https://www.planwallpaper.com/static/images/cool-wallpaper-5_G6Qe1wU.jpg">
-	        </div>
-	        <h2>Pseudo Joueur<br><span>Equipe Actuel</span></h2>
-	        <p> some details </p>
-	        <div class="row button_list">
-	                <button data-tag="X" class="btn btn-danger btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">X</button>
-	                <button data-tag="S" class="btn btn-warning btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">S</button>
-	                <button data-tag="A" class="btn btn-success btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">A</button>
-	                <button data-tag="B" class="btn btn-primary btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">B</button>
-	                <button data-tag="C" class="btn btn-info btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">C</button>
-	                <button data-tag="F" class="btn btn-secondary btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">F</button>
-	        </div>
-
-	    </div>
+		<div class="box">
+			<div class="img">
+				<img src="https://www.planwallpaper.com/static/images/cool-wallpaper-5_G6Qe1wU.jpg">
+			</div>
+			<h2>Pseudo Joueur<br><span>Equipe Actuel</span></h2>
+			<p> some details </p>
+			<div class="row button_list">
+				<button data-tag="X" class="btn btn-danger btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">X</button>
+				<button data-tag="S" class="btn btn-warning btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">S</button>
+				<button data-tag="A" class="btn btn-success btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">A</button>
+				<button data-tag="B" class="btn btn-primary btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">B</button>
+				<button data-tag="C" class="btn btn-info btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">C</button>
+				<button data-tag="F" class="btn btn-secondary btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3">F</button>
+			</div>
+			<player secret="1"></player>
+		</div>
 	</div>
 </section>
+<button class="btn btn-success btn-small btn-skip">Skip</button>
+<script type="text/javascript">
+	$(document).on("click", ".btn-skip", function(){
+		$.post("index.php?page=ajax", {
+			ajax:"newPlayer"
+		}, function(result){
+			$("#player").html(result);
+		})
+	});
+</script>
 <style>
 body {
     margin:0;

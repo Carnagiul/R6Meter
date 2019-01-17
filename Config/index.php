@@ -1,4 +1,8 @@
 <?php
+	session_start();
+	require_once("Classe/Player.Clas.php");
+	require_once("Classe/Sql.Clas.php");
+	require_once("Classe/User.Clas.php");
 	$bdd["host"] = "";
 	$bdd["name"] = "";
 	$bdd["username"] = "";
@@ -14,5 +18,7 @@
 			define("DEBUG_ON", TRUE);
 		}
 	}
+	$sql = new Sql();
+	$sql->connect();
 
 ?>
