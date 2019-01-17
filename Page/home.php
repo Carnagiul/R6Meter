@@ -43,8 +43,8 @@ body {
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    width:300px;
-    min-height:400px;
+    width:500px;
+    min-height:500px;
     background:#fff;
     box-shadow:0 20px 50px rgba(0,0,0,.1);
     border-radius:10px;
@@ -64,8 +64,8 @@ body {
     width:100%;
 }
 .card .box .img {
-    width:120px;
-    height:120px;
+    width:220px;
+    height:220px;
     margin:0 auto;
     border-radius:50%;
     overflow:hidden;
