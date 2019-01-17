@@ -87,9 +87,10 @@ body {
 }
 .card .box ul li {
     list-style:none;
+    
     float:left;
 }
-.card .box ul li a {
+.card .box ul li button {
     display:block;
     color:#aaa;
     margin:0 10px;
@@ -97,7 +98,7 @@ body {
     transition:0.5s;
     text-align:center;
 }
-.card .box ul li:hover a {
+.card .box ul li:hover button {
     color:#e91e63;
     transform:rotateY(360deg);
 }
