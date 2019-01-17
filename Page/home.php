@@ -97,8 +97,7 @@ body {
     transition:0.5s;
     text-align:center;
 }
-.card .box ul li:hover button {
-    color:white;
+.card .box .button_list:hover {
     transform:rotateY(360deg);
 }
 </style>
