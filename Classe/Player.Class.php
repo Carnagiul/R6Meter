@@ -14,7 +14,7 @@ Class Player
 		global $sql;
 
 		$query = "SELECT * FROM `" . self::$table . "` ORDER BY RAND() LIMIT 1";
-		$ret = $sql->CustomSelect($query);
+		$ret = $sql->CustomSelect($query, NULL);
 		if (defined("DEBUG_ON") && DEBUG_ON == TRUE)
 		{
 			var_dump("--- Class Player ---");

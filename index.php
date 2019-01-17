@@ -10,5 +10,4 @@ include_once("header.php");
 include_once("Page/" . $page . ".php");
 include_once("footer.php");
 
-
 ?>
