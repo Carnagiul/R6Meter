@@ -4,17 +4,16 @@
 	        <div class="img">
 	            <img src="https://www.planwallpaper.com/static/images/cool-wallpaper-5_G6Qe1wU.jpg">
 	        </div>
-	        <h2>Prakash Prajapati<br><span>Web Graphic Designer</span></h2>
-	        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	                tempor incididunt ut labore et.</p>
+	        <h2>Pseudo Joueur<br><span>Equipe Actuel</span></h2>
+	        <p> some details </p>
 	        <span>
 	            <ul>
-	                <li class=""><button class="btn btn-danger btn-small btn-rounded rounded">X</button></li>
-	                <li class=""><button class="btn btn-warning btn-small btn-rounded rounded">X</button></li>
-	                <li class=""><button class="btn btn-success btn-small btn-rounded rounded">X</button></li>
-	                <li class=""><button class="btn btn-primary btn-small btn-rounded rounded">X</button></li>
-	                <li class=""><button class="btn btn-info btn-small btn-rounded rounded">X</button></li>
-	                <li class=""><button class="btn btn-disabled btn-small btn-rounded rounded">X</button></li>
+	                <li class=""><button data-tag="X" class="btn btn-danger btn-small btn-rounded rounded">X</button></li>
+	                <li class=""><button data-tag="S" class="btn btn-warning btn-small btn-rounded rounded">S</button></li>
+	                <li class=""><button data-tag="A" class="btn btn-success btn-small btn-rounded rounded">A</button></li>
+	                <li class=""><button data-tag="B" class="btn btn-primary btn-small btn-rounded rounded">B</button></li>
+	                <li class=""><button data-tag="C" class="btn btn-info btn-small btn-rounded rounded">C</button></li>
+	                <li class=""><button data-tag="F" class="btn btn-secondary btn-small btn-rounded rounded">F</button></li>
 	            </ul>
 	        </span>
 	    </div>
