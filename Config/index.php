@@ -18,7 +18,7 @@
 			define("DEBUG_ON", TRUE);
 		}
 	}
-	$sql = new Sql();
-	$sql->connect();
+//	$sql = new Sql();
+//	$sql->connect();
 
 ?>
