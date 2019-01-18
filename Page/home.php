@@ -22,6 +22,24 @@
 			$("#player").html(result);
 		})
 	});
+
+    $(document).on("click", ".btn-action-user", function(){
+        let secret = $(document).find("#secret").attr("secret");
+        let action = $(this).attr("btn-action");
+        let value = $(this).attr("tag");
+        $.post("index.php?page=ajax", {
+            ajax:action,
+            id:secret,
+            value:value
+        }, function(result)
+        {
+            $.post("index.php?page=ajax", {
+                ajax:"newPlayer"
+            }, function(result){
+                $("#player").html(result);
+            })        
+        })
+    });
 </script>
 <style>
 body {

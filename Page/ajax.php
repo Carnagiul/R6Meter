@@ -8,7 +8,7 @@ if (isset($_POST["ajax"]))
 	$action = $_POST["ajax"];
 
 switch ($action) {
-	case 'rankPlayer':
+	case 'gradePlayer':
 		if (isset($_POST["id"]))
 		{
 			if (isset($_POST["value"]))
@@ -46,19 +46,19 @@ switch ($action) {
 				<div class=\"card\">
 					<div class=\"box\">
 						<div class=\"img\">
-							<img class=\"img-fluid img-thumbnail\" src=\"" . $player->getImg() . "\">
+							<img class=\"img-fluid img-thumbnail\" src=\"" . $player->getImg() . "\" style=\"height:300px;\">
 						</div>
 						<h2>" . $player->getName() . "<br><span>" . $player->getTeam() . "</span></h2>
 						<p> some details </p>
 						<div class=\"row button_list\">
-							<button data-tag=\"X\" class=\"btn btn-danger btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">X</button>
-							<button data-tag=\"S\" class=\"btn btn-warning btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">S</button>
-							<button data-tag=\"A\" class=\"btn btn-success btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">A</button>
-							<button data-tag=\"B\" class=\"btn btn-primary btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">B</button>
-							<button data-tag=\"C\" class=\"btn btn-info btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">C</button>
-							<button data-tag=\"F\" class=\"btn btn-secondary btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">F</button>
+							<button data-tag=\"X\" btn-action=\"GradeUser\" class=\"btn-action-user btn btn-danger btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">X</button>
+							<button data-tag=\"S\" btn-action=\"GradeUser\" class=\"btn-action-user btn btn-warning btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">S</button>
+							<button data-tag=\"A\" btn-action=\"GradeUser\" class=\"btn-action-user btn btn-success btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">A</button>
+							<button data-tag=\"B\" btn-action=\"GradeUser\" class=\"btn-action-user btn btn-primary btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">B</button>
+							<button data-tag=\"C\" btn-action=\"GradeUser\" class=\"btn-action-user btn btn-info btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">C</button>
+							<button data-tag=\"F\" btn-action=\"GradeUser\" class=\"btn-action-user btn btn-secondary btn-small btn-rounded rounded col-sm-6 col-md-4 col-md-3\">F</button>
 						</div>
-						<player secret=\"" . $player->getId() . "\"></player>
+						<player secret=\"" . $player->getId() . "\" id=\"secret\" name=\"secret\" class=\"secret\"></player>
 					</div>
 				</div>
 				";
